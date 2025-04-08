@@ -7,3 +7,55 @@
 html {
   scroll-behavior: smooth;
 }
+
+body {
+  background: var(--bg-main);
+}
+
+
+@font-face {
+  font-family: 'Stormlight';
+  src: url('./assets/fonts/Stormlight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Revamped';
+  src: url('./assets/fonts/Revamped.otf') format('truetype');
+}
+
+:root {
+  --bg-main: #101010;
+  --sd-text-blue: #0066FF;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fillProgress {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
